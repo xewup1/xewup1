@@ -35,13 +35,13 @@ paul.user.setGame("chasser le dino").catch(console.error)
   
   });
 
-kirby.on("guildMemberAdd", member => {
+kirby.on("guildMemberAdd", member {
     let role = member.guild.roles.find("name", "Abonnés")
     member.guild.channels.find("name","general").send(`Bienvenue sur le serveur ${member.user.username}. N'Hésite pas à faire un tour sur les #regles et à te présenter dans #presentations.`)
     member.addRole(role)
     });
 
 
-paul.on("guildMemberRemove", member => {
+paul.on("guildMemberRemove", member {
      member.guild.channels.find("name","general").send(`Au revoir ${member.user.username} ! Encore un qui quitte le serveur.. Kirby tu pues trop de la bouche !`)
       });
